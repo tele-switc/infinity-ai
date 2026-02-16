@@ -1,19 +1,19 @@
-# infinity-ai
-♾️ Infinity AI - The Ultimate Primary Source Aggregator
+# infinity-player
+The Ultimate Primary Source Aggregator
 
-Infinity AI is a self-hosted, AI-powered media intelligence system designed to cut through the noise of modern content algorithms. It autonomously scans thousands of videos, uses Large Language Models (LLMs) to filter out clickbait, commentary, and reaction content, and delivers a pure stream of Primary Sources (Interviews, Keynotes, Lectures, and Documentaries).
+infinity-player is a self-hosted, AI-powered media intelligence system designed to cut through the noise of modern content algorithms. It autonomously scans thousands of videos, uses Large Language Models (LLMs) to filter out clickbait, commentary, and reaction content, and delivers a pure stream of Primary Sources (Interviews, Keynotes, Lectures, and Documentaries).
 
-✨ Why Infinity AI?
+✨ Why infinity-player?
 
 YouTube and social media are flooded with "YouTuber talks about X" content. Finding the original 3-hour interview or the raw keynote speech is becoming increasingly difficult.
 
-Infinity AI solves this by acting as your personal research agent.
+infinity-player solves this by acting as your personal research agent.
 
 🚀 Key Features
 
 🧠 AI-Powered Verification (The Truth Shield)
 
-Uses NVIDIA NIM (Llama-3), OpenAI, or DeepSeek to semantically analyze video metadata.
+Uses NVIDIA NIM (open-source models), OpenAI, or DeepSeek to semantically analyze video metadata.
 
 Distinguishes between Elon Musk speaking vs. A random guy analyzing Elon Musk.
 
@@ -74,16 +74,16 @@ Bash
 download
 content_copy
 expand_less
-git clone https://github.com/yourusername/infinity-ai.git
-cd infinity-ai
+git clone https://github.com/infinity-ai/infinity-player.git
+cd infinity-player
 2. Create Environment (Recommended)
 code
 Bash
 download
 content_copy
 expand_less
-conda create -n infinity python=3.10
-conda activate infinity
+conda create -n infinity-player python=3.10
+conda activate infinity-player
 3. Install Dependencies
 code
 Bash
@@ -113,7 +113,7 @@ Setup Screen: If no API key is found, you will be redirected to the setup page.
 
 Select Provider:
 
-NVIDIA NIM (Recommended): Best for Llama-3-70B reliability.
+NVIDIA NIM: for some open-source models.
 
 OpenAI / DeepSeek: Fully supported.
 
@@ -146,15 +146,7 @@ Responsive: The list expands to full width, allowing you to manage the database 
 
 Contributions are welcome! Whether it's adding new AI providers, improving the UI, or optimizing the scraper.
 
-Fork the Project
-
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-
-Push to the Branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
+I'm a new guy for developer's world, a student who use ai to create this project.
 
 📜 License
 
