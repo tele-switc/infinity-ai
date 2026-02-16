@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+yt-dlp
+websockets
+jinja2
+python-multipart
+apscheduler
+openai

@@ -1,0 +1,12 @@
+person:
+  name: "Elon Musk"
+  
+sources:
+  youtube:
+    # 示例：Tesla YouTube 频道的某个播放列表或关键词搜索
+    # 这里为了演示，使用关键词搜索
+    keywords: ["Elon Musk interview 2024"]
+    max_results: 10
+
+player:
+  shuffle: true
