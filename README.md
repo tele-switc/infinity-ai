@@ -1,88 +1,239 @@
 # infinity-player
-# ♾️ Infinity AI - The Ultimate Primary Source Aggregator
+# ♾️ infinity-player - The Ultimate Primary Source Aggregator
 
 <div align="center">
-
-![Version](https://img.shields.io/badge/Version-7.0-blue.svg)
-![Python](https://img.shields.io/badge/Python-3.10+-3776AB.svg)
-![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688.svg)
-![NVIDIA NIM](https://img.shields.io/badge/AI-NVIDIA%20NIM-76b900.svg)
-![License](https://img.shields.io/badge/License-MIT-purple.svg)
+![Version](https://img.shields.io/badge/Version-7.0-blue.svg?style=flat-square)
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB.svg?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688.svg?style=flat-square&logo=fastapi&logoColor=white)
+![NVIDIA NIM](https://img.shields.io/badge/AI-NVIDIA%20NIM-76b900.svg?style=flat-square&logo=nvidia&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-purple.svg?style=flat-square)
+</div>
 
 **"Stop watching the noise. Start listening to the source."**
 
-[Features](#-features) • [Installation](#-installation) • [Configuration](#-configuration) • [Usage](#-usage)
-
-</div>
+[Features](#-features) • [Installation](#-installation) • [Configuration](#-configuration) • [Usage](#-usage) • [Contributing](#-contributing) • [License](#-license)
 
 ---
 
 ## 📖 Introduction
 
-**Infinity AI** is a self-hosted, intelligent media archival system designed for researchers, developers, and deep learners.
+**infinity-player** is a self-hosted, intelligent media archival system designed for researchers, developers, and deep learners. In an era of algorithmic noise, infinity-player acts as your **Autonomous Research Agent**. It executes massive concurrent searches across the web, uses **Large Language Models (LLMs)** to filter out clickbait, commentary, and reaction content, and delivers a pure, ad-free stream of **Primary Sources** (Interviews, Keynotes, Lectures, and Documentaries).
 
-In an era of algorithmic noise, Infinity AI acts as your **Autonomous Research Agent**. It executes massive concurrent searches across the web, uses **Large Language Models (LLMs)** to filter out clickbait and commentary, and delivers a pure, ad-free stream of **Primary Sources** (Interviews, Keynotes, Lectures, and Documentaries).
+---
 
 ## ✨ Features
 
 ### 🧠 AI-Powered "Truth Shield"
-The core engine uses **NVIDIA NIM (Llama-3)**, **OpenAI**, or **DeepSeek** to semantically analyze video metadata.
-- **Sentiment Analysis:** Instantly rejects "Reaction", "Gossip", and "Clickbait" content.
-- **Source Verification:** Prioritizes official channels (e.g., Stanford, TED, YC) and primary speakers.
-- **Context Generation:** Generates real-time AI insights and summaries for each video.
+
+* The core engine can use **NVIDIA NIM (Llama-3)**, **OpenAI**, or **DeepSeek** to semantically analyze video metadata.
+* **Sentiment Analysis:** Instantly rejects "Reaction", "Gossip", and "Clickbait" content.
+* **Source Verification:** Prioritizes official channels (e.g., Stanford, TED, YC) and primary speakers.
+* **AI Insight:** Generates real-time viewing guides (Context, Key Topics, Target Audience) before you watch.
 
 ### 🌊 Massive "Funnel" Architecture
-- **Wide Net:** Scans **1,000+** candidates per search session using concurrent probing.
-- **Heuristic Pre-filter:** Python-based regex engine instantly eliminates 90% of junk data (Shorts, TikToks).
-- **Deep Verification:** The top candidates are sent to the LLM for final "Quality Assurance".
+
+* **Wide Net:** Scans **1,000+** candidates per search session using concurrent matrix probing (Year + Topic combinations).
+* **Heuristic Pre-filter:** Python-based regex engine instantly eliminates 90% of junk data (Shorts, TikToks, Gaming).
+* **Deep Verification:** The top candidates are sent to the LLM for final "Quality Assurance".
 
 ### 📽️ Cinema-Grade Experience
-- **System-Level Proxy:** Bypasses browser CORS and 403 restrictions for seamless playback.
-- **Floating Mini-Window:** A draggable, glass-morphism Picture-in-Picture mode for multitasking.
-- **High Fidelity:** Forces **1080p MP4** streams with full seek/scrub support.
-- **Offline Capable:** One-click download to save content locally.
+
+* **System-Level Proxy:** Bypasses browser CORS and 403 restrictions for seamless playback via backend piping.
+* **Floating Mini-Window:** A draggable, glass-morphism Picture-in-Picture mode for multitasking.
+* **High Fidelity:** Forces **1080p MP4** streams with full seek/scrub support.
+* **Direct Download:** One-click offline archiving of any video source.
 
 ### 🤖 Autonomous Persistence
-- **Auto-Pilot:** Background scheduler wakes up every 24 hours to hunt for new content automatically.
-- **Smart Resume:** Remembers your playback position across sessions. Close the tab, come back tomorrow, and resume exactly where you left off.
+
+* **Auto-Pilot:** Background scheduler wakes up every 24 hours to hunt for new content automatically.
+* **Smart Resume:** Remembers your playback position across sessions via LocalStorage. Close the tab, come back tomorrow, and resume exactly where you left off.
 
 ---
 
 ## 🛠️ Tech Stack
 
-*   **Core:** Python 3.10+
-*   **Web Framework:** FastAPI + Uvicorn (Asynchronous)
-*   **AI Engine:** OpenAI SDK (Compatible with NVIDIA NIM, DeepSeek, SiliconFlow)
-*   **Scraping:** yt-dlp (Custom configured for metadata extraction)
-*   **Database:** SQLite3
-*   **Frontend:** Vanilla JS + Tailwind CSS (Zero-build architecture)
-*   **Networking:** HTTPX (SOCKS/HTTP Proxy support)
+| Component      |            Technology | Description                                            |
+| -------------- | --------------------: | ------------------------------------------------------ |
+| **Core**       |          Python 3.10+ | The brain of the operation.                            |
+| **API**        |     FastAPI + Uvicorn | High-performance asynchronous backend.                 |
+| **AI Engine**  |            OpenAI SDK | Compatible with NVIDIA NIM, DeepSeek, SiliconFlow.     |
+| **Scraping**   |                yt-dlp | Custom configured for metadata extraction & streaming. |
+| **Database**   |               SQLite3 | Zero-config persistence storage.                       |
+| **Frontend**   | Vanilla JS + Tailwind | No build steps required, extremely fast.               |
+| **Networking** |                 HTTPX | Advanced SOCKS/HTTP Proxy support.                     |
 
 ---
 
 ## ⚡ Installation
 
 ### 1. Clone Repository
-```bash
-git clone https://github.com/yourusername/infinity-ai.git
-cd infinity-ai
 
-### 2. Environment Setup (Recommended)
 ```bash
-conda create -n infinity python=3.10
+git clone https://github.com/yourusername/infinity-player.git
+cd infinity-player
+```
+
+### 2. Environment Setup (recommended)
+
+Using conda (recommended):
+
+```bash
+conda create -n infinity python=3.10 -y
 conda activate infinity
+```
+
+Or use virtualenv:
+
+```bash
+python -m venv venv
+source venv/bin/activate  # Linux/macOS
+venv\Scripts\activate     # Windows
+```
 
 ### 3. Install Dependencies
+
+From `requirements.txt`:
+
 ```bash
 pip install -r requirements.txt
+```
 
-or
+Or install manually:
+
 ```bash
-pip install fastapi uvicorn yt-dlp openai apscheduler jinja2 requests httpx[socks]
+pip install fastapi uvicorn yt-dlp openai apscheduler jinja2 requests "httpx[socks]"
+```
 
 ### 4. Run Application
+
 ```bash
+# option 1: run the main script
 python main.py
 
-Access at: http://localhost:8000
+# option 2: use uvicorn for development
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+```
+
+Access the dashboard at: `http://localhost:8000`
+
+---
+
+## ⚙️ Configuration
+
+infinity-player features a built-in Graphical Setup Wizard — manual editing of config files is usually unnecessary.
+
+1. Launch App: open `http://localhost:8000`.
+2. Setup Screen: if no API key is found, you'll be redirected to the setup page.
+3. Select Provider:
+
+   * **NVIDIA NIM (recommended):** use `meta/llama-3.1-70b-instruct` for best reasoning (if available).
+   * **OpenAI / DeepSeek / SiliconFlow:** fully supported via a preset dropdown.
+4. Proxy Settings (important):
+
+   * If you are behind a firewall or using a local proxy (e.g., Clash, V2Ray), enter your proxy URL in Advanced Settings (example: `http://127.0.0.1:7890`) to avoid connection errors.
+
+---
+
+## 🖥️ User Guide
+
+### 🔍 Deep Search
+
+* Type a subject (e.g., `Sam Altman`). The system initiates a massive concurrent scan and returns long-form primary-source content (preferably within the last 5 years).
+
+### 🎞️ Cinema Mode
+
+* **AI Insight (🧠):** Click to generate a summary and a viewing guide for the current video.
+* **Download (⬇️):** One-click download of current video (1080p MP4).
+* **Mini-Mode (🗗):** Detach the player into a floating window for multitasking.
+
+### 🖱️ Drag & Drop
+
+* In Mini-Mode, drag the top handle of the player to reposition it anywhere. The list will expand to full width for easier browsing.
+
+---
+
+## ⚠️ Notes & Tips
+
+* Recommended Python: **3.10+**
+* Recommended storage: keep a dedicated folder for archives if you plan to download many videos.
+* Respect copyright and content licenses when archiving or redistributing media.
+* For best AI performance, ensure your chosen provider's API key and quota are configured correctly.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Whether it's adding new AI providers, improving the UI, or optimizing the scraper.
+
+1. Fork the project.
+2. Create your feature branch:
+
+```bash
+git checkout -b feature/AmazingFeature
+```
+
+3. Commit your changes:
+
+```bash
+git add .
+git commit -m "Add some AmazingFeature"
+```
+
+4. Push and open a Pull Request:
+
+```bash
+git push origin feature/AmazingFeature
+# then open a PR on GitHub with a clear description of changes
+```
+
+Please follow the repository's code style and add tests where appropriate.
+
+---
+
+## 🧪 Testing
+
+* Basic test command (if tests provided):
+
+```bash
+pytest tests/
+```
+
+* Linting:
+
+```bash
+flake8 .
+```
+
+---
+
+
+## 🔐 Security & Privacy
+
+* Keep API keys out of version control (use environment variables or the UI setup wizard).
+* If you enable automatic downloads or background scraping, be mindful of bandwidth and storage usage.
+* Use proxies responsibly and respect services' terms of service.
+
+---
+
+## 📦 Releases & Changelog
+
+Maintain a `CHANGELOG.md` in the repo for major version notes. Example entry:
+
+* **v7.0** — AI Insight, Offline Download, System Proxy, Auto-Pilot scheduler, improved filtering
+
+---
+
+## 📚 Resources & Acknowledgements
+
+* `yt-dlp` for metadata extraction and streaming helpers.
+* `FastAPI` for the backend.
+* Open-source AI models and SDKs (NVIDIA NIM, OpenAI, DeepSeek).
+* Thanks to contributors and early testers.
+
+---
+
+## 📝 License
+
+MIT License — see `LICENSE` file for full text.
+
 
