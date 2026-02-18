@@ -66,3 +66,23 @@ The core engine uses **NVIDIA NIM (Llama-3)**, **OpenAI**, or **DeepSeek** to se
 ```bash
 git clone https://github.com/yourusername/infinity-ai.git
 cd infinity-ai
+
+### 2. Environment Setup (Recommended)
+```bash
+conda create -n infinity python=3.10
+conda activate infinity
+
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+
+or
+```bash
+pip install fastapi uvicorn yt-dlp openai apscheduler jinja2 requests httpx[socks]
+
+### 4. Run Application
+```bash
+python main.py
+
+Access at: http://localhost:8000
+
