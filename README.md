@@ -180,50 +180,8 @@ Please follow the repository's code style and add tests where appropriate.
 
 ---
 
-## 🧪 Testing
-
-* Basic test command (if tests provided):
-
-```bash
-pytest tests/
-```
-
-* Linting:
-
-```bash
-flake8 .
-```
-
----
-
-
-## 🔐 Security & Privacy
-
-* Keep API keys out of version control (use environment variables or the UI setup wizard).
-* If you enable automatic downloads or background scraping, be mindful of bandwidth and storage usage.
-* Use proxies responsibly and respect services' terms of service.
-
----
-
-## 📦 Releases & Changelog
-
-Maintain a `CHANGELOG.md` in the repo for major version notes. Example entry:
-
-* **v7.0** — AI Insight, Offline Download, System Proxy, Auto-Pilot scheduler, improved filtering
-
----
-
-## 📚 Resources & Acknowledgements
-
-* `yt-dlp` for metadata extraction and streaming helpers.
-* `FastAPI` for the backend.
-* Open-source AI models and SDKs (NVIDIA NIM, OpenAI, DeepSeek).
-* Thanks to contributors and early testers.
-
----
-
 ## 📝 License
 
-MIT License — see `LICENSE` file for full text.
+MIT License
 
 
